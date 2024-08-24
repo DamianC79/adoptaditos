@@ -1,0 +1,219 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(/fonts/Poppins/Poppins-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Lato', 'Poppins', sans-serif;
+    background-image: url("/imagenes/JEMA\ VIVI\ 022-05.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    padding: 10px;
+}
+
+.petlogo img {
+    width: 85px;
+    height: 85px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton {
+    background-color: #E7FBE6;
+    text-decoration: none;
+    border: 0;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 7px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+section nav .boton {
+    background-color: #E7FBE6;
+}
+
+.boton:hover {
+    background-color: #A28B55;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+section {
+    background-color: #86AB89;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+    width: 800px;
+    align-items: center;
+}
+
+.content .info {
+    column-count: 2;
+}
+
+footer {
+    background-color: #E7FBE6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+aside {
+    width: 250px;
+    background-color: #CBE2B5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+.box:hover{
+    transform: scale(1.2);
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+}
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#icon {
+    display: flex;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: transparent;
+}
+
+#icon img {
+    width: 46px;
+}
+
+#icon img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+footer p{
+    width:70%;
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    section {
+        flex-direction: row;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        height: auto;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 150px;
+        height: 150px;
+        padding: 0 2.5px;
+        margin: 0 2.5px;
+    }
+
+    .box img {
+        width: 100%;
+        height: 100%;
+    }
+
+    video{ 
+        width: 380px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 599px) {
+    body {
+        margin: 5px;
+    }
+
+    .petlogo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .boton {
+        padding: 10px;
+        margin: 3px;
+    }
+
+    .content {
+        width: 100%;
+        margin: 5px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #icon {
+        right: 5px;
+        bottom: 5px;
+    }
+
+    #icon img {
+        width: 50px;
+    }
+    video{
+        width:100%;
+        height:100%;
+    }
+}
