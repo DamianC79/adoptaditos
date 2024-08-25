@@ -181,44 +181,6 @@ footer p{
     }
 }
 
-/* @media (max-width: 599px) {
-    body {
-        margin: 5px;
-    }
-
-    .petlogo img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .boton {
-        padding: 10px;
-        margin: 3px;
-    }
-
-    .content {
-        width: 100%;
-        margin: 5px;
-    }
-
-    footer {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    #icon {
-        right: 5px;
-        bottom: 5px;
-    }
-
-    #icon img {
-        width: 50px;
-    }
-    video{
-        width:100%;
-        height:100%;
-    }
-} */
  @media (max-width: 599px) {
      body {
          margin: 5px;
@@ -285,5 +247,6 @@ footer p{
 
      footer p {
          width: 100%;
+         margin-bottom: 46px;
      }
  }
